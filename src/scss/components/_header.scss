@@ -3,15 +3,17 @@
   height: 145px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
 
   &__container {
     display: flex;
     width: 100%;
+    position: relative;
   }
 
   &__logo {
     padding-left: 17px;
+    padding-top: 14px;
   }
 
   &__nav {
@@ -22,6 +24,8 @@
     // align-items: center;
     flex: 1;
     position: relative;
+    height: 50%;
+    transform: translateY(45%);
   }
 
   &__list {
@@ -35,12 +39,18 @@
   &__item {
     color: white;
     margin: auto 15px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22.4px;
     text-align: center;
+    transition: color .2s linear;
+
+    &:hover {
+      color: var(--text)
+    }
 
     &:first-child {
       max-width: 200px;
+      padding-top: 20px;
     }
   }
 
@@ -49,6 +59,6 @@
     width: 72px;
     position: absolute;
     right: 0;
-    transform: translate(-23%, 23%);
+    transform: translate(-45%, 42%);
   }
 }

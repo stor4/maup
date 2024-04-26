@@ -2,7 +2,7 @@
 // colors
 :root {
   // base
-  // --font-family: "e-Ukraine", sans-serif;
+  --font-family: "e-Ukraine", sans-serif;
   --content-width: 1280px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -12,7 +12,8 @@
   --primary: #833236;
   --primary-blue: #005AA0;
   --primary-yellow: #FFD738;
-  --text: #a72c32;
+  --text-primary: #a72c32;
+  --text: #232323;
   --bg-gray: #EBECE7;
 
 }

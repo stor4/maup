@@ -19,22 +19,20 @@
   &__text {
     height: 100%;
     background-color: var(--primary-blue);
-    // width: 100%;
     flex: 1 28%;
     display: flex;
     flex-direction: column;
-    padding-left: 45px;
     font-size: 30px;
     font-weight: 500;
+    padding: 20px 45px 0;
   }
 
   &__innertext {
     color: var(--light-color);
     line-height: 37.5px;
-    padding-top: 18px;
-    padding-right: 30px;
-    max-width: 300px;
-
+    padding-right: 20px;
+    // max-width: 300px;
+    margin-top: 28px;
   }
 
   &__circle {
@@ -44,13 +42,16 @@
     height: 171.85px;
     width: 171.85px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 25px;
+    margin-top: 24px;
 
     p {
-      color: var(--text);
+      color: var(--text-primary);
       font-weight: 700;
       line-height: 34.5px;
+      padding: 0 17px;
+      // max-width: 100px;
 
     }
   }

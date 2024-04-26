@@ -1,0 +1,31 @@
+.forms {
+  height: 265px;
+  display: flex;
+
+  &__container {
+    padding-top: 21px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    gap: 110px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 44px 50px;
+
+    img {
+      height: 96px;
+      width: 96px;
+    }
+
+    p {
+      margin-top: 15px;
+    }
+  }
+}
+
