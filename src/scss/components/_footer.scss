@@ -37,3 +37,29 @@
   }
 }
 
+@include small-tablet {
+  .footer {
+    height: auto;
+
+    &__container {
+      padding-top: 68px;
+    }
+
+    &__text {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    &__privacy {
+      font-size: 24px;
+    }
+
+    &__copyright {
+      font-size: 20px;
+      line-height: 20px;
+      position: relative;
+      transform: none;
+      padding: 35px 0;
+    }
+  }
+}

@@ -29,3 +29,30 @@
   }
 }
 
+@include small-tablet {
+  .forms {
+    height: auto;
+
+    &__container {
+      grid-template-columns: repeat(1, 1fr);
+      padding-top: 72px;
+      padding-bottom: 76px;
+      gap: 50px;
+    }
+
+    &__item {
+      font-size: 30px;
+      margin: 0;
+
+      img {
+        height: 120px;
+        width: 120px;
+      }
+
+      p {
+        margin-top: 17px;
+      }
+    }
+  }
+}
+

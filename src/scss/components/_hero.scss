@@ -56,3 +56,42 @@
     }
   }
 }
+
+@include small-tablet {
+  .hero {
+    height: auto;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__img {
+      height: 386px;
+      flex: none;
+      background-position: 80%;
+    }
+
+    &__text {
+      flex: none;
+      height: 506px;
+      padding: 10px 75px 0;
+      text-align: center;
+      align-items: center;
+      font-size: 34px;
+    }
+
+    &__innertext {
+      line-height: 46px;
+    }
+
+    &__circle {
+      height: 211.5px;
+      width: 211.5px;
+
+      p {
+        padding: 0 55px;
+        line-height: 45px;
+      }
+    }
+  }
+}

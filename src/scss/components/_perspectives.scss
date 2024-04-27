@@ -44,3 +44,36 @@
   }
 }
 
+@include small-tablet {
+  .perspectives {
+    height: auto;
+
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+      padding-top: 37px;
+      gap: 30px;
+      padding-bottom: 72px;
+    }
+
+    &__title {
+      font-size: 48px;
+      margin-top: 62px;
+      line-height: 56px;
+    }
+
+    &__item {
+      line-height: 28px;
+      font-size: 28px;
+
+      img {
+        height: 120px;
+        width: 120px;
+      }
+
+      p {
+        margin-top: 10px;
+        max-width: 300px;
+      }
+    }
+  }
+}

@@ -27,4 +27,26 @@
     border-image: initial;
     transition: all 0.2s linear 0s;
   }
+
+  &__mobile {
+    display: none;
+  }
+}
+
+@include small-tablet {
+  .moreInfo {
+    height: 288px;
+    // height: auto;
+
+    &__mobile {
+      display: block;
+    }
+
+    a {
+      height: auto;
+      padding: 32px 50px;
+      line-height: 38px;
+      font-size: 32px;
+    }
+  }
 }

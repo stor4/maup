@@ -17,13 +17,35 @@
     font-size: 20px;
   }
 
-  &__text {
-  }
-
   &__value {
     color: var(--primary-blue);
     line-height: 37.5px;
     font-size: 30px;
     padding-top: 8px;
+  }
+}
+
+@include small-tablet {
+  .counter {
+    height: auto;
+
+    &__container {
+      flex-direction: column;
+      padding-top: 75px;
+      gap: 51px;
+      padding-bottom: 72px;
+    }
+
+    &__item {
+      line-height: 28px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    &__value {
+      line-height: 37.5px;
+      font-size: 46px;
+      padding-top: 30px;
+    }
   }
 }

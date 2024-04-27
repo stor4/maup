@@ -39,3 +39,47 @@
     }
   }
 }
+
+@include small-tablet {
+  .advantages {
+    height: auto;
+
+    &__cotainer {
+      grid-template-columns: repeat(1, 1fr);
+      padding-top: 72px;
+      padding-bottom: 73px;
+      gap: 54px;
+    }
+
+    &__item {
+      font-size: 28px;
+      line-height: 34px;
+      text-align: center;
+      flex-direction: column;
+
+      img {
+        height: 309px;
+        width: 309px;
+      }
+
+      p {
+        padding-top: 31px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      &:first-child {
+        margin-left: 0;
+
+        p {
+          padding-right: 0;
+        }
+      }
+
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+
+  }
+}

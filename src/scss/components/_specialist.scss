@@ -1,7 +1,7 @@
 .specialist {
   background-color: var(--bg-gray);
   // height: 1300px;
-  padding-bottom: 30%;
+  padding-bottom: 37.5%;
 
 
   &__container {
@@ -79,10 +79,95 @@
     margin-bottom: 15px;
   }
 
-  &__list-price {
+  &__list-price,
+  &__list-priceMob {
     color: var(--primary-blue);
     font-size: 30px;
     line-height: 120%;
     margin-top: 26px;
+  }
+
+  &__list-priceMob {
+    display: none;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 68px;
+  }
+}
+
+@include small-tablet {
+  .specialist {
+    padding-bottom: 0;
+    background-color: var(--light-color);
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__bg {
+      height: 379px;
+      background-size: cover;
+      background-position: 50% 55%;
+    }
+
+    &__lists {
+      grid-template-columns: repeat(1, 1fr);
+      position: static;
+      gap: 0;
+      transform: none;
+    }
+
+    &__list-title {
+      font-size: 44px;
+      text-align: center;
+    }
+
+    &__list-priceMob {
+      display: block;
+    }
+
+    &__list-price {
+      display: none;
+    }
+
+    &__list {
+      flex: 1 1 50%;
+      padding: 56px 40px 30px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+
+      ul {
+        padding: 0;
+        padding-left: 20px;
+        margin-top: 38px;
+      }
+
+      li {
+        margin: 17px 0 17px 22px;
+        line-height: 105%;
+        font-size: 34px;
+      }
+
+      &:last-child {
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 0;
+        padding-bottom: 16px;
+        padding-top: 32px;
+
+        ul {
+          margin-top: 36px;
+          padding-left: 15px;
+        }
+
+        li {
+          margin: 14px 14px 14px 22px;
+          line-height: 103%;
+          font-size: 28px;
+        }
+      }
+    }
   }
 }
