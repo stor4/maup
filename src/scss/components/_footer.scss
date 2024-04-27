@@ -1,0 +1,39 @@
+.footer {
+  height: 346px;
+  background-color: var(--footer-bg);
+
+  &__container {
+    color: var(--light-color);
+    text-align: center;
+    padding-top: 52px;
+    position: relative;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 19.8px;
+  }
+
+  &__privacy {
+    color: #ACD2DB;
+    font-size: 19px;
+    margin-top: 38px;
+    cursor: pointer;
+    transition: color .2s linear;
+
+    &:hover {
+      color: var(--primary-yellow);
+    }
+  }
+
+  &__copyright {
+    color: #047592;
+    font-size: 14px;
+    line-height: 15.6px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(315%);
+  }
+}
+

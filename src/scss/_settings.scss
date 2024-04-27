@@ -115,3 +115,20 @@ a:visited {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.d-input {
+  height: 56px;
+  border: 1px solid #b6b6b6;
+  border-radius: 12px;
+  padding: 16px;
+  color: var(--text);
+  transition: border-color .2s linear;
+
+  &::placeholder {
+    color: #b6b6b6;
+  }
+
+  &:focus {
+    border-color: var(--primary);
+  }
+}

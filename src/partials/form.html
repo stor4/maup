@@ -1,0 +1,56 @@
+<form action="" class="form">
+  <div class="container form__container">
+    <div class="form__text">
+      <p class="form__title">Реєстраційна форма</p>
+      <p class="form__desc">
+        Будь ласка, заповніть усі поля форми та натисніть кнопку «Зареєструватися».
+        <br><br>
+        Незабаром Вам зателефонує співробітник університету та проконсультує по всіх питаннях щодо отримання сучасної європейської освіти у зручній формі та без складання ЗНО.
+        <br><br>
+        Дякуємо
+      </p>
+    </div>
+    <div class="form__inputs">
+      <div class="form__inputs-item">
+        <label for="input1">Ваше ім'я</label>
+        <input class="d-input" type="text" id="input1">
+      </div>
+
+      <div class="form__inputs-item">
+        <label for="input3">Ваш мобільний телефон</label>
+        <input class="d-input" type="text" id="input3" placeholder="+38 ( ___ ) ___-__-__">
+      </div>
+
+      <div class="form__inputs-item">
+        <label for="input2">Ваше прізвище</label>
+        <input class="d-input" type="text" id="input2">
+      </div>
+
+      <div class="form__inputs-item">
+        <label for="input5">Ваш E-mail</label>
+        <input class="d-input" type="text" id="input5">
+      </div>
+
+      <div class="form__inputs-item">
+        <!-- <label for="input4">Форма навчання</label>
+        <input class="d-input" type="text" id="input4"> -->
+        <label>Форма навчання</д>
+        <div onclick="openList()" class="form__inputs-from">денна</div>
+        <ul id="form-dropdown" class="form__inputs-dropwdown">
+          <li onclick="closeList()">Денаа</li>
+          <li onclick="closeList()">Заочна</li>
+          <li onclick="closeList()">Вечірня</li>
+        </ul>
+      </div>
+
+
+      <label class="control control-checkbox">
+        Хочу обидва дипломи
+            <input type="checkbox" checked="checked" />
+        <div class="control_indicator"></div>
+      </label>
+
+    </div>
+    <button class="form__btn">Зареєструватися</button>
+  </div>
+</form>
