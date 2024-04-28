@@ -3,7 +3,7 @@
   height: 145px;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
+  z-index: 3;
 
   &__container {
     display: flex;
@@ -15,14 +15,13 @@
     padding-left: 17px;
     padding-top: 14px;
     cursor: pointer;
+    max-width: 100%;
+    height: 120px;
   }
 
   &__nav {
     color: var(--light-color);
     display: flex;
-    // justify-content: center;
-    // gap: 10px;
-    // align-items: center;
     flex: 1;
     position: relative;
     height: 50%;
@@ -31,10 +30,11 @@
 
   &__list {
     display: flex;
-    // align-items: center;
     width: 100%;
-    gap: 80px;
+    // gap: 80px;
+    justify-content: space-around;
     margin: 0;
+    padding-right: 90px;
   }
 
   &__item {
@@ -62,6 +62,96 @@
     right: 0;
     transform: translate(-45%, 42%);
   }
+
+  &__mobile {
+    position: absolute;
+    background-color: var(--primary);
+    width: 100%;
+    display: none;
+    left: 0;
+    top: 143px;
+    border-top: 1px solid #ccc;
+    transform: translateY(-300%);
+    z-index: 0;
+    transition: transform 5s ease;
+  }
+
+  &__burger-toggle {
+    background-color: #fff;
+    height: 4px;
+    width: 48px;
+    position: absolute;
+    right: 10px;
+    right: 100px;
+    top: 0;
+    transform: translate(160%, 1749%);
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      content: '';
+      height: 4px;
+      width: 32px;
+      background-color: #fff;
+      position: absolute;
+      top: 13px;
+      right: 0;
+    }
+
+    &::before {
+      width: 48px;
+      top: -13px;
+    }
+  }
+
+  &__mobile-nav {
+    height: 100%;
+    font-weight: 500;
+
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 38px;
+      padding-top: 20px;
+      padding-bottom: 18px;
+    }
+
+    li {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__mobile-lang {
+    border-top: 1px solid #ccc;
+    color: var(--light-color);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 30px 0;
+
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img{
+      height: 51px;
+      width: 61px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.header-open {
+  transform: translateY(0%);
+}
+
+.header-close {
+  transform: translateY(-300%);
 }
 
 @include small-tablet {
@@ -80,5 +170,27 @@
       display: none
     }
   }
+}
 
+@include tablet {
+  .header {
+    &__nav, &__lang {
+      display: none;
+    }
+
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__mobile {
+      display: block;
+    }
+
+    &__item {
+      &:first-child {
+        max-width: 250px;
+        padding-top: 0;
+      }
+    }
+  }
 }

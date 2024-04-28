@@ -1,7 +1,7 @@
 .specialist {
   background-color: var(--bg-gray);
   // height: 1300px;
-  padding-bottom: 37.5%;
+  padding-bottom: 385px;
 
 
   &__container {
@@ -53,7 +53,7 @@
       line-height: 100%;
     }
 
-    &:last-child {
+    &:nth-child(2) {
       font-weight: 400;
       font-size: 18px;
       line-height: 23.4px;
