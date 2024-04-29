@@ -20,3 +20,13 @@ document.addEventListener('click', function(event) {
     closeMenu();
   }
 });
+
+burgerToggle.addEventListener('click', function(event) {
+  const isMenuOpen = menu.classList.contains('header-open');
+
+  if (isMenuOpen) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+});
