@@ -26,6 +26,11 @@
     border-color: rgb(255, 255, 255);
     border-image: initial;
     transition: all 0.2s linear 0s;
+
+    &:hover {
+      background-color: var(--primary-yellow);
+      color: var(--primary);
+    }
   }
 
   &__mobile {
