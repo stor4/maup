@@ -14,28 +14,32 @@
       <div class="form__inputs-item">
         <label for="input1">Ваше ім'я</label>
         <input class="d-input" type="text" id="input1">
+        <p class="form__inputs-warning">Заповніть це поле</p>
       </div>
 
       <div class="form__inputs-item">
         <label for="input3">Ваш мобільний телефон</label>
         <input class="d-input" type="text" id="input3" placeholder="+38 ( ___ ) ___-__-__">
+        <p class="form__inputs-warning">Заповніть це поле</p>
       </div>
 
       <div class="form__inputs-item">
         <label for="input2">Ваше прізвище</label>
         <input class="d-input" type="text" id="input2">
+        <p class="form__inputs-warning">Заповніть це поле</p>
       </div>
 
       <div class="form__inputs-item">
         <label for="input5">Ваш E-mail</label>
         <input class="d-input" type="text" id="input5">
+        <p class="form__inputs-warning">Заповніть це поле</p>
       </div>
 
       <div class="form__inputs-item">
         <label>Форма навчання</д>
-        <div onclick="openList()" class="form__inputs-from">денна</div>
+        <div onclick="openList()" id="input6" class="form__inputs-from">Денна</div>
         <ul id="form-dropdown" class="form__inputs-dropwdown">
-          <li onclick="closeList()">Денаа</li>
+          <li onclick="closeList()">Денна</li>
           <li onclick="closeList()">Заочна</li>
           <li onclick="closeList()">Вечірня</li>
         </ul>

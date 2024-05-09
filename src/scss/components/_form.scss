@@ -93,6 +93,11 @@
     }
   }
 
+  &__inputs-warning {
+    color: red;
+    display: none;
+  }
+
   &__btn {
     margin-top: 50px;
     display: inline-block;
@@ -197,10 +202,10 @@
   content: '';
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 4.5rem;
-  height: 4.5rem;
+  left: -2px;
+  top: -1px;
+  width: 4.0rem;
+  height: 4.0rem;
   margin-left: -1.3rem;
   margin-top: -1.3rem;
   background: #b1b1b1;
@@ -209,6 +214,7 @@
   z-index: 99999;
   transform: scale(0);
 }
+
 @keyframes s-ripple {
   0% {
       transform: scale(0);
@@ -266,8 +272,14 @@
       padding-top: 44px;
     }
 
+    &__inputs-warning {
+      font-size: 24px;
+      font-weight: 500;
+      padding-top: 5px;
+    }
+
     &__inputs-item {
-      label {
+      label{
         font-size: 24px;
         font-weight: 500;
       }

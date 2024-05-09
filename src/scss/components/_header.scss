@@ -10,11 +10,11 @@
     width: 100%;
     position: relative;
     z-index: 3;
+    padding-top: 14px;
+    padding-left: 31px;
   }
 
   &__logo {
-    padding-left: 17px;
-    padding-top: 14px;
     cursor: pointer;
     max-width: 100%;
     // height: 120px;
@@ -32,8 +32,8 @@
   &__list {
     display: flex;
     width: 100%;
-    // gap: 80px;
-    justify-content: space-around;
+    gap: 76px;
+    align-items: center;
     margin: 0;
     padding-right: 90px;
   }
@@ -45,6 +45,7 @@
     line-height: 22.4px;
     text-align: center;
     transition: color .2s linear;
+    margin: 0;
 
     &:hover {
       color: var(--text)
@@ -52,7 +53,10 @@
 
     &:first-child {
       max-width: 200px;
-      padding-top: 20px;
+    }
+
+    &:last-child {
+      margin-left: 51px;
     }
   }
 
@@ -61,7 +65,7 @@
     width: 72px;
     position: absolute;
     right: 0;
-    transform: translate(-45%, 42%);
+    transform: translate(-45%, 25%);
   }
 
   &__mobile {

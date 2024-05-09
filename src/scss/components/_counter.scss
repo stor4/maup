@@ -1,11 +1,11 @@
 .counter {
-  height: 186px;
+  // height: 186px;
   display: flex;
 
   &__container {
     display: flex;
     gap: 105px;
-    padding-top: 60px;
+    padding: 60px 0 52.5px;
   }
 
   &__item {
@@ -31,9 +31,8 @@
 
     &__container {
       flex-direction: column;
-      padding-top: 75px;
       gap: 51px;
-      padding-bottom: 72px;
+      padding: 75px 0 70px;
     }
 
     &__item {

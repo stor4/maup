@@ -1,5 +1,6 @@
 const inputs = document.querySelectorAll('.d-input');
 const submitBtn = document.querySelector('.form__btn');
+const form = document.querySelector('.form')
 
 function checkForm() {
   const allFilled = true;
@@ -21,3 +22,18 @@ function checkForm() {
 inputs.forEach(function(input) {
   input.addEventListener('input', checkForm);
 });
+
+form.addEventListener('submit', function(event) {
+  inputs.forEach(input => {
+    const warning = input.nextElementSibling;
+
+    if (input.value.trim() === '') {
+      warning.style.display = 'block';
+      event.preventDefault();
+    } else {
+      warning.style.display = 'none';
+    }
+  });
+});
+
+

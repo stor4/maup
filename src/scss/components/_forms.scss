@@ -3,11 +3,13 @@
   display: flex;
 
   &__container {
-    padding-top: 21px;
+    padding: 21px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
     height: 100%;
-    gap: 110px;
+    // gap: 110px;
+    gap: 8.6%;
   }
 
   &__item {
@@ -17,14 +19,17 @@
     font-weight: 500;
     font-size: 20px;
     margin: 44px 50px;
+    text-align: center;
 
     img {
       height: 96px;
       width: 96px;
+      min-width: 96px;
     }
 
     p {
       margin-top: 15px;
+      min-width: 145.5px;
     }
   }
 }
@@ -35,7 +40,7 @@
 
     &__container {
       grid-template-columns: repeat(1, 1fr);
-      padding-top: 72px;
+      padding-top: 71px;
       padding-bottom: 76px;
       gap: 50px;
     }
