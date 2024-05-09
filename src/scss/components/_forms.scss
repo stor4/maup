@@ -9,7 +9,8 @@
     // grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
     height: 100%;
     // gap: 110px;
-    gap: 8.6%;
+    // gap: 8.6%;
+    gap: clamp(0px, 8.6vw, 110px);
   }
 
   &__item {

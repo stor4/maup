@@ -32,7 +32,8 @@
   &__list {
     display: flex;
     width: 100%;
-    gap: 76px;
+    // gap: 76px;
+    gap: clamp(0px, 12%, 76px);
     align-items: center;
     margin: 0;
     padding-right: 90px;
@@ -56,7 +57,8 @@
     }
 
     &:last-child {
-      margin-left: 51px;
+      // margin-left: 51px;
+      margin-left: clamp(0px, 4vw, 51px);
     }
   }
 
