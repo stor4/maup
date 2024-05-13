@@ -4,13 +4,11 @@
 
   &__container {
     padding: 21px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    // grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+    display: flex;
     height: 100%;
-    // gap: 110px;
-    // gap: 8.6%;
-    gap: clamp(0px, 8.6vw, 110px);
+    gap: 15.1%;
+    gap: clamp(0%, 9vw, 15.1%);
+    justify-content: center;
   }
 
   &__item {
@@ -40,7 +38,7 @@
     height: auto;
 
     &__container {
-      grid-template-columns: repeat(1, 1fr);
+      flex-direction: column;
       padding-top: 71px;
       padding-bottom: 76px;
       gap: 50px;
