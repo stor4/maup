@@ -40,8 +40,9 @@
 
 @include small-tablet {
   .moreInfo {
-    height: 288px;
-    // height: auto;
+    // height: 288px;
+    height: auto;
+    padding: 47px 24px;
 
     &__mobile {
       display: block;
@@ -49,9 +50,14 @@
 
     a {
       height: auto;
-      padding: 32px 50px;
-      line-height: 38px;
-      font-size: 32px;
+      // padding: 32px 30px;
+      padding: 24px 32px;
+      line-height: 24px;
+      // font-size: 32px;
+      font-size: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
 }

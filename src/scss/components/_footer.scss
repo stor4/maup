@@ -46,16 +46,20 @@
     }
 
     &__text {
-      font-size: 28px;
-      line-height: 38px;
+      // font-size: 28px;
+      font-size: 18px;
+      line-height: 23.4px;
+      font-weight: 400;
     }
 
     &__privacy {
-      font-size: 24px;
+      // font-size: 24px;
+      font-size: 18px;
     }
 
     &__copyright {
-      font-size: 20px;
+      // font-size: 20px;
+      font-size: 13px;
       line-height: 20px;
       position: relative;
       transform: none;

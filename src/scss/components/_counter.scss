@@ -31,20 +31,20 @@
 
     &__container {
       flex-direction: column;
-      gap: 51px;
-      padding: 75px 0 70px;
+      gap: 32px;
+      padding: 48px 24px;
     }
 
     &__item {
-      line-height: 28px;
-      font-size: 28px;
+      line-height: 23.4px;
+      font-size: 18px;
       text-align: center;
     }
 
     &__value {
       line-height: 37.5px;
-      font-size: 46px;
-      padding-top: 30px;
+      font-size: 30px;
+      padding-top: 16px;
     }
   }
 }

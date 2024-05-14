@@ -1,22 +1,31 @@
 .header {
+  padding-left: 31px;
   background-color: var(--primary);
   height: 145px;
   display: flex;
   flex-direction: column;
-  z-index: 3;
+  position: relative;
 
   &__container {
     display: flex;
     width: 100%;
     position: relative;
-    z-index: 3;
     padding-top: 14px;
-    padding-left: 31px;
+    z-index: 3;
+  }
+
+  &__inner {
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
   }
 
   &__logo {
     cursor: pointer;
     max-width: 100%;
+    position: relative;
     // height: 120px;
   }
 
@@ -76,39 +85,50 @@
     width: 100%;
     display: none;
     left: 0;
-    top: 143px;
-    border-top: 1px solid #ccc;
+    top: 96px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     transform: translateY(-300%);
     z-index: 0;
     transition: transform 0.5s ease-in-out;
   }
 
   &__burger-toggle {
-    background-color: #fff;
-    height: 4px;
-    width: 48px;
+    background-color: transparent;
+    border: none;
+    height: 44px;
+    width: 44px;
     position: absolute;
-    right: 10px;
-    right: 100px;
+    // right: 10px;
+    // right: 100px;
+    right: clamp(10px, 25vw, 100px);
     top: 0;
-    transform: translate(143%, 1749%);
+    transform: translate(143%, 60%);
     cursor: pointer;
     display: none;
 
-    &::after,
-    &::before {
-      content: '';
-      height: 4px;
-      width: 32px;
+    div {
       background-color: #fff;
-      position: absolute;
-      top: 13px;
-      right: 0;
-    }
+      height: 3px;
+      width: 100%;
+      position: relative;
 
-    &::before {
-      width: 48px;
-      top: -13px;
+      &::after,
+      &::before {
+        content: '';
+        height: 3px;
+        // width: 32px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 11px;
+        right: 0;
+        width: 21px;
+      }
+
+      &::before {
+        top: -11px;
+        width: 100%;
+      }
     }
   }
 
@@ -122,23 +142,24 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 38px;
-      padding-top: 20px;
-      padding-bottom: 18px;
+      gap: 24px;
+      // padding: 20px 40px 18px;
+      padding: 8px 24px;
     }
 
     li {
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 
   &__mobile-lang {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--light-color);
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 30px 0;
+    // padding: 30px 0;
+    padding: 12px 24px;
 
     a{
       display: flex;
@@ -147,9 +168,10 @@
     }
 
     img{
-      height: 51px;
-      width: 61px;
-      margin-right: 15px;
+      height: 46px;
+      width: 36px;
+      margin-right: 8px;
+      object-fit: contain;
     }
   }
 }
@@ -162,13 +184,58 @@
   transform: translateY(-300%);
 }
 
+
+
+@include tablet {
+  .header {
+    padding-left: 0;
+
+    &__nav, &__lang {
+      display: none;
+    }
+
+    &__container {
+      justify-content: space-between;
+      padding: 16px;
+    }
+
+    &__mobile, &__burger-toggle {
+      display: block;
+    }
+
+    &__mobile {
+      top: 145px;
+    }
+
+    &__burger-toggle {
+      transform: translate(143%, 118%);
+    }
+
+    &__item {
+      &:first-child {
+        max-width: 250px;
+        padding-top: 0;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
 @include small-tablet {
   .header {
-    height: 144px;
+    height: 96px;
+
+    &__container {
+      height: 100%;
+      align-items: center;
+    }
 
     &__logo {
-      padding: 16px 5px;
-      height: 120px;
+      width: 256px;
+      height: 70px;
     }
 
     &__nav {
@@ -178,28 +245,14 @@
     &__lang {
       display: none
     }
-  }
-}
 
-@include tablet {
-  .header {
-    &__nav, &__lang {
-      display: none;
+    &__burger-toggle {
+      transform: translate(143%, 60%);
     }
 
-    &__container {
-      justify-content: space-between;
-    }
-
-    &__mobile, &__burger-toggle {
-      display: block;
-    }
-
-    &__item {
-      &:first-child {
-        max-width: 250px;
-        padding-top: 0;
-      }
+    &__mobile {
+      top: 96px;
     }
   }
 }
+

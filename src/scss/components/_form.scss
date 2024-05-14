@@ -45,6 +45,7 @@
 
     input {
       margin-top: 5px;
+      outline: var(--primary);
     }
   }
 
@@ -253,23 +254,30 @@
   .form {
     height: auto;
 
+    &__container {
+      padding: 42px 24px 42px;
+    }
+
     &__inputs {
       grid-template-columns: repeat(1, 1fr);
+      row-gap: 23px;
     }
 
     &__text {
-      padding-top: 60px;
+      padding-top: 0px;
     }
 
     &__title {
-      line-height: 56px;
-      font-size: 48px;
+      line-height: 37.5px;
+      // font-size: 48px;
+      font-size: 30px;
     }
 
     &__desc {
-      font-size: 28px;
-      line-height: 32px;
-      padding-top: 44px;
+      // font-size: 28px;
+      font-size: 18px;
+      line-height: 23.4px;
+      padding-top: 24px;
     }
 
     &__inputs-warning {
@@ -280,14 +288,16 @@
 
     &__inputs-item {
       label{
-        font-size: 24px;
+        // font-size: 24px;
+        font-size: 16px;
         font-weight: 500;
       }
 
       .d-input  {
-        margin-top: 15px;
-        font-size: 28px;
-        padding: 34px 16px;
+        margin-top: 8px;
+        // font-size: 28px;
+        font-size: 18px;
+        padding: 17px 16px;
         height: auto;
       }
 
@@ -317,28 +327,30 @@
     }
 
     &__inputs-from {
-        margin-top: 15px;
-        font-size: 28px;
-        padding: 34px 16px;
+        margin-top: 7px;
+        // font-size: 28px;
+        font-size: 18px;
+        padding: 15.5px 16px;
         height: auto;
 
         &::after {
-          transform: translate(-66%, 140%);
+          // transform: translate(-66%, 140%);
+          transform: translate(-66%, 45%);
         }
     }
 
     &__inputs-dropwdown {
-      transform: translateY(65.5%);
+      // transform: translateY(65.5%);
+      transform: translateY(48.5%);
     }
 
     &__container {
       padding-bottom: 68px;
     }
-
   }
 
   .control {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
   }
 }

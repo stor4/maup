@@ -1,27 +1,30 @@
 <header class="header">
-  <div class="container header__container">
-    <img class="header__logo" src="../img/logo.svg" alt="logo">
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item"><a href="#"><span>Спеціальності та</span> спеціалізації</a></li>
-        <li class="header__item"><a href="#">Переваги</a></li>
-        <li class="header__item"><a href="#">Реєстрація</a></li>
-      </ul>
-    </nav>
-    <a href="#"><img class="header__lang" src="../img/pl-lang.png" alt="lang"></a>
-
-    <div id="header__mobile" class="header__mobile">
-      <nav class="header__mobile-nav">
-        <ul class="">
-          <li class="header__item" onclick="closeMenu()"><a href="#">Спеціальності та спеціалізації</a></li>
-          <li class="header__item" onclick="closeMenu()"><a href="#">Переваги</a></li>
-          <li class="header__item" onclick="closeMenu()"><a href="#">Реєстрація</a></li>
+  <div class="header__inner">
+    <div class="container header__container">
+      <img class="header__logo" src="../img/logo.svg" alt="logo">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="#"><span>Спеціальності та</span> спеціалізації</a></li>
+          <li class="header__item"><a href="#">Переваги</a></li>
+          <li class="header__item"><a href="#">Реєстрація</a></li>
         </ul>
-        <div class="header__mobile-lang">
-          <a href="#"><img class="" src="../img/pl-lang-mobile.svg" alt="lang"> Polska</a>
-        </div>
       </nav>
+      <a href="#"><img class="header__lang" src="../img/pl-lang.png" alt="lang"></a>
+      <button class="header__burger-toggle">
+        <div></div>
+      </button>
     </div>
-    <div class="header__burger-toggle"></div>
+  </div>
+  <div id="header__mobile" class="header__mobile">
+    <nav class="header__mobile-nav">
+      <ul class="">
+        <li class="header__item" onclick="closeMenu()"><a href="#">Спеціальності та спеціалізації</a></li>
+        <li class="header__item" onclick="closeMenu()"><a href="#">Переваги</a></li>
+        <li class="header__item" onclick="closeMenu()"><a href="#">Реєстрація</a></li>
+      </ul>
+      <div class="header__mobile-lang">
+        <a href="#"><img class="" src="../img/pl-lang-mobile.svg" alt="lang"> Polska</a>
+      </div>
+    </nav>
   </div>
 </header>
